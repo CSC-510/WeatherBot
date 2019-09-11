@@ -1,0 +1,19 @@
+{
+  "name": "mattermost-bot",
+  "version": "1.0.0",
+  "description": "mattermost-bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mattermost",
+    "bot"
+  ],
+  "author": "Chris Parnin",
+  "license": "ISC",
+  "dependencies": {
+    "forecast.io": "0.0.11",
+    "mattermost-client": "^6.1.2"
+  }
+}

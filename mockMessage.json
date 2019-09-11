@@ -1,0 +1,17 @@
+{
+    "event": "posted",
+    "data":
+     { "channel_display_name": "random",
+       "channel_name": "random",
+       "channel_type": "O",
+       "post":
+        {"id":"au8jrka36bykxgufkhfqk9z94w","create_at":1568207135110,"update_at":1568207135110,"edit_at":0,"delete_at":0,"is_pinned":false,"user_id":"4qnqmgkbdiditech7qduwfeijh","channel_id":"ciypsbphfbr7389cihwqkasbho","root_id":"","parent_id":"","original_id":"","message":"msg.","type":"","props":{},"hashtags":"","pending_post_id":"4qnqmgkbdiditech7qduwfeijh:1568207135076","metadata":{}},
+       "sender_name": "cjparnin",
+       "team_id": "t8grp4i8g3rfdn6seaoq8js7io" },
+    "broadcast":
+     { "omit_users": null,
+       "user_id": "",
+       "channel_id": "ciypsbphfbr7389cihwqkasbho",
+       "team_id": "" },
+    "seq": 3 
+}
