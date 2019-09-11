@@ -1,10 +1,14 @@
 
 # Weather Bot
 
-We will write a simple bot that will tell us the current weather.
+We will write a simple bot that will tell us the current weather whenever asked about the weather in a mattermost chat server.
 
-We will use[forecast.io](https://darksky.net/dev) for weather info.
-You might also want to consider using the [open weather api](https://openweathermap.org/appid).
+We will use [forecast.io](https://darksky.net/dev) for weather info. Register your email in order to retrieve a token.
+You might also want to consider using the [open weather api](https://openweathermap.org/appid); however, the code would have to be adjusted.
+
+You will also need to create a personal-access-token in mattermost.
+
+![personal-access-token](img/personal-access-token.png)
 
 ### Prereq
 
@@ -21,14 +25,14 @@ Set up tokens. You do not want to store sensitive information like api tokens in
 In windows, you can run:
 ```
 setx FORECASTTOKEN "<forecast.io.token>"
-setx BOTTOKEN "<access-token>"
+setx BOTTOKEN "<personal-access-token>"
 # You will then need to close the cmd window and reopen.
 ```
 In other systems, you can set them in your shell, like in `.bash_profile`:
 ```
 # Edit .bash_profile to have:
 export FORECASTTOKEN="<token>"
-export BOTTOKEN="<access-token>"
+export BOTTOKEN="<personal-access-token>"
 # Then reload
 $ source ~/.bash_profile
 ```
@@ -67,7 +71,7 @@ Uncomment the following code.
 // })();
 ```
 
-You can run `node weather.js` and confirm you can properly read the weather information.
+You can run `node weather.js` and confirm you can properly retrieve the weather information.
 
 ## Understanding Bots in Mattermost
 
@@ -95,6 +99,12 @@ async function main()
 ```
 
 This code will subscribe to events published by mattermost via a connected websocket. Whenever a 'message' event is received, a callback is called. The message is checked for a pattern, and then processed. The bot can respond to the channel.
+
+## Testing your bot.
+
+Run `node index.js`. You should be able to verify you can connect to mattermost. Your account should reply to any message that contains information about the weather.
+
+
 
 ## Enhance your bot.
 
