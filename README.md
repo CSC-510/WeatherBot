@@ -104,7 +104,7 @@ This code will subscribe to events published by mattermost via a connected webso
 
 Run `node index.js`. You should be able to verify you can connect to mattermost. Your account should reply to any message that contains information about the weather.
 
-
+![](img/weatherbot.png)
 
 ## Enhance your bot.
 
